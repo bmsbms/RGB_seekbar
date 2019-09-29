@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <!-- piros-->
+    <TextView
+        android:id="@+id/redID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="red"
+        android:layout_margin="5sp"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="Arial Black"
+
+        ></TextView>
+    <TextView
+        android:id="@+id/redV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="R:"
+        android:layout_margin="5sp"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="Arial Black"
+        android:layout_below="@id/redV"
+        ></TextView>
+    <SeekBar
+        android:id="@+id/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:max="255"
+        android:progress="1"
+        android:indeterminate="false"
+        android:configChanges="keyboardHidden|orientation"
+        android:layout_below="@id/redV"
+
+        ></SeekBar>
+
+    <!-- zöld-->
+    <TextView
+        android:id="@+id/greenID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="green"
+        android:layout_margin="5sp"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="Arial Black"
+        android:layout_below="@id/red"
+        ></TextView>
+    <TextView
+        android:id="@+id/greenV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="G:"
+        android:layout_margin="5sp"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="Arial Black"
+        android:layout_below="@id/greenID"
+        ></TextView>
+    <SeekBar
+        android:id="@+id/green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:max="255"
+        android:progress="1"
+        android:indeterminate="false"
+        android:configChanges="keyboardHidden|orientation"
+        android:layout_below="@id/greenV"
+
+        ></SeekBar>
+
+    <!-- kék-->
+    <TextView
+        android:id="@+id/blueID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="blue"
+        android:layout_margin="5sp"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="Arial Black"
+        android:layout_below="@id/green"
+        ></TextView>
+    <TextView
+        android:id="@+id/blueV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="B:"
+        android:layout_margin="5sp"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="Arial Black"
+        android:layout_below="@id/blueID"
+        ></TextView>
+    <SeekBar
+        android:id="@+id/blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:max="255"
+        android:progress="1"
+        android:indeterminate="false"
+        android:configChanges="keyboardHidden|orientation"
+        android:layout_below="@id/blueV"
+
+        ></SeekBar>
+
+    <!-- <TextView
+        android:id="@+id/hex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Hexadecimal"
+        android:layout_margin="5sp"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="Arial Black"
+        android:layout_below="@id/blue"
+        ></TextView> -->
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:gravity="center"
+        android:text="Color"
+        android:textSize="65sp"
+        android:background="#CCCCCC"
+        android:layout_below="@id/blue"
+
+
+        ></TextView>
+
+    </LinearLayout>
+
